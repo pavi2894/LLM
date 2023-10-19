@@ -47,7 +47,7 @@ export async function GET() {
               name: "InteractPDF Pro",
               description: "Unlimited PDF sessions!",
             },
-            unit_amount: 500,
+            unit_amount: 2500,
             recurring: {
               interval: "month",
             },
