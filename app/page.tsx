@@ -28,8 +28,9 @@ export default async function Home() {
             <h1 className="mr-3 text-5xl font-semibold">Chat with any PDF</h1>
             <UserButton afterSignOutUrl="/" />
           </div>
-
-          <div className="flex mt-2">
+          <div>
+            <div>
+          <div className="flex  justify-center mt-2">
             {isAuth && firstChat && (
               <>
                 <Link href={`/chat/${firstChat.id}`}>
@@ -42,13 +43,13 @@ export default async function Home() {
                 </div>
               </>
             )}
-          </div>
+          </div></div>
  
           <p className="max-w-xl mt-1 text-lg text-slate-600">
             Join millions of students, researchers and professinals to instantly
             anwer questions and understand research with AI
           </p>
-
+       
           <div className="w-full mt-4">
             {isAuth ? (
               <FileUpload />
@@ -61,8 +62,27 @@ export default async function Home() {
               </Link>
             )}
           </div>
+          <div>
+            
+            <br>
+            </br>
+            <br>
+            </br>
+
+            <div justify-center mb-5>
+            <Button>
+            <Link href="/about-me" className="text-black-500 hover:text-grey-700">
+             About 
+            </Link> 
+            </Button>
+            </div>
+     </div>
         </div>
+        
       </div>
+     </div>
+    
     </div>
+    
   );
 }
