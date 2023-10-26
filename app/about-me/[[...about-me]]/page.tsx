@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-
+import Link from "next/link";
 
 const AboutMe: React.FC = () => {
   const [showAboutMe, setShowAboutMe] = useState(true);
@@ -35,6 +35,12 @@ const AboutMe: React.FC = () => {
             onClick={toggleProjects}
           >
             About Project
+
+          </button>
+          <button className="bg-transparent border font-medium py-2 px-4 rounded hover:bg-black-600 hover:text-white" onClick="/">
+          <Link href="/" className="text-black-500 hover:text-grey-700">
+            Return Home
+            </Link>
           </button>
         </div>
         <div>
