@@ -37,7 +37,7 @@ const AboutMe: React.FC = () => {
             About Project
 
           </button>
-          <button className="bg-transparent border font-medium py-2 px-4 rounded hover:bg-black-600 hover:text-white" onClick="/">
+          <button className="bg-transparent border font-medium py-2 px-4 rounded hover:bg-black-600 hover:text-white">
           <Link href="/" className="text-black-500 hover:text-grey-700">
             Return Home
             </Link>
